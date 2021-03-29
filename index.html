@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Face Recognizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+    <center>
+        <h3 class="btn btn-default heading">FACE RECOGNITION</h3>
+        <br><br>
+  
+        <p style="font-size: 22px;">Model is trained to identify my family members : </p>
+        <br>
+         <b>
+           Arshad Ahmed Khan
+           <br><br>
+           Tahniyath Jahan
+           <br><br>
+           Musab Ahmed Khan Umair
+           <br><br>
+           Asima Iffath
+           <br><br>
+           Faiza Sabahath
+           <br><br>
+         </b>
+        <label>Webcam View - </label>
+        <div id="camera"></div>
+        <br><br>
+        <div id="result"></div>
+        <br><br>
+        <button style="font-size: large;" onclick="take_snapshot();" class="btn btn-warning"> Capture Image </button>
+        <br><br>
+         <button style="font-size: large;" onclick="check();" class="btn btn-danger"> Identify Image</button>
+        <br><br>
+    
+        <p style="font-size: 25px; font-weight: bold; color: rgb(62, 4, 70);">Family Members :  <span id="results_object"></span></p>
+        <p style="font-size: 25px; font-weight: bold; color: rgb(51, 0, 117);">Accuracy :  <span id="results_accuracy"></span></p>
+    </center>
+    </div>
+     </body>
+</html>
